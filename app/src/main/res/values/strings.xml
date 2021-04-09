@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pexel Wallpapers</string>
+    <string name="download_wallpaper">Download Wallpaper</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+</resources>

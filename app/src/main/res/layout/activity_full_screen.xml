@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photoView"/>
+
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/photoView"
+            app:layout_constraintLeft_toLeftOf="@+id/photoView"
+            app:layout_constraintRight_toRightOf="@id/photoView"
+            app:layout_constraintBottom_toBottomOf="@id/photoView"
+            android:layout_height="wrap_content">
+        </ProgressBar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        android:text="@string/set_wallpaper"
+        android:id="@+id/btnSetWallpaper"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="SetWallpaperEvent"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/btnSetWallpaper"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/download"
+            android:id="@+id/btnDownloadWallpaper"
+            android:background="@android:color/transparent"
+            android:onClick="DownloadWallpaperEvent"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
