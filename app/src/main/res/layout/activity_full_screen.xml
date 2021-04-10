@@ -46,7 +46,6 @@
         android:fontFamily="casual"
         android:layout_alignParentBottom="true"
         android:background="@android:color/holo_blue_light"
-        android:onClick="SetWallpaperEvent"
         tools:targetApi="lollipop" />
 
     <LinearLayout
@@ -67,7 +66,6 @@
             android:src="@drawable/download"
             android:id="@+id/btnDownloadWallpaper"
             android:background="@android:color/transparent"
-            android:onClick="DownloadWallpaperEvent"
             tools:targetApi="lollipop" />
     </LinearLayout>
 
